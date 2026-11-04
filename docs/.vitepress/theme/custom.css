@@ -1,0 +1,74 @@
+/* Palette inspired by chalkboard-style math videos: deep navy board, blue/teal/gold/rose ink. */
+:root {
+  --viz-bg: #f6f7fb;
+  --viz-panel: #ffffff;
+  --viz-grid: #d9dce6;
+  --viz-ink: #1f2433;
+  --viz-muted: #6b7185;
+  --viz-blue: #2f6fdf;
+  --viz-teal: #138a7e;
+  --viz-gold: #c58a00;
+  --viz-rose: #c2416b;
+  --viz-violet: #6c4fd1;
+  --vp-c-brand-1: #2f6fdf;
+  --vp-c-brand-2: #3d7cf0;
+  --vp-c-brand-3: #2f6fdf;
+}
+.dark {
+  --viz-bg: #10141f;
+  --viz-panel: #161b29;
+  --viz-grid: #2a3145;
+  --viz-ink: #e8ebf4;
+  --viz-muted: #9aa1b8;
+  --viz-blue: #58c4dd;
+  --viz-teal: #5cd0b3;
+  --viz-gold: #f4c95d;
+  --viz-rose: #fc6c85;
+  --viz-violet: #b19cf2;
+  --vp-c-bg: #0d111b;
+  --vp-c-bg-alt: #0a0e17;
+  --vp-c-bg-soft: #161b29;
+  --vp-c-brand-1: #58c4dd;
+  --vp-c-brand-2: #7fd3e6;
+  --vp-c-brand-3: #2f8fb0;
+}
+
+/* Shared widget frame */
+.viz {
+  background: var(--viz-panel);
+  border: 1px solid var(--viz-grid);
+  border-radius: 12px;
+  padding: 16px;
+  margin: 20px 0;
+}
+.viz-title { font-weight: 600; font-size: 0.95rem; margin-bottom: 4px; color: var(--viz-ink); }
+.viz-hint { font-size: 0.85rem; color: var(--viz-muted); margin-bottom: 12px; line-height: 1.5; }
+.viz-controls { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; margin: 12px 0 4px; font-size: 0.9rem; }
+.viz-controls label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+.viz-controls input[type='range'] { accent-color: var(--viz-blue); width: 140px; }
+.viz-btn {
+  border: 1px solid var(--viz-grid);
+  background: var(--viz-bg);
+  color: var(--viz-ink);
+  border-radius: 8px;
+  padding: 5px 12px;
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+.viz-btn:hover { border-color: var(--viz-blue); }
+.viz-btn.primary { background: var(--viz-blue); color: var(--viz-panel); border-color: var(--viz-blue); font-weight: 600; }
+.viz-btn:disabled { opacity: 0.45; cursor: default; }
+.viz svg { display: block; width: 100%; height: auto; }
+.viz-readout { font-size: 0.9rem; color: var(--viz-ink); margin-top: 8px; min-height: 1.5em; }
+.viz-readout b { color: var(--viz-gold); }
+
+/* "Where CS uses this" box */
+.custom-block.cs { border-color: var(--viz-teal); background: color-mix(in srgb, var(--viz-teal) 9%, transparent); }
+
+.lesson-meta { font-size: 0.9rem; color: var(--viz-muted); border-bottom: 1px solid var(--viz-grid); margin-bottom: 24px; }
+.lesson-meta p { margin: 0 0 12px; }
+.vp-doc .custom-block { overflow-x: auto; }
+.vp-doc mjx-container[display='true'] { overflow-x: auto; overflow-y: hidden; max-width: 100%; }
+.vp-doc table { display: block; max-width: 100%; overflow-x: auto; }
+.vp-doc details.custom-block { max-width: 100%; }
+.vp-doc mjx-container[jax='SVG'][display='true'] { display: block; overflow-x: auto; overflow-y: hidden; max-width: 100%; }

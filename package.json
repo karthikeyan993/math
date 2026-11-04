@@ -1,0 +1,15 @@
+{
+  "name": "math-for-cs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "markdown-it-mathjax3": "4.3.2",
+    "vitepress": "1.6.4",
+    "vue": "3.5.44"
+  }
+}
