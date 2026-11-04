@@ -1,0 +1,13 @@
+{
+  "promptSuggestionEnabled": false,
+  "permissions": {
+    "allow": [
+      "Bash(grep *)",
+      "Bash(pdftotext *)",
+      "Bash(python3 -c *)",
+      "Bash(git status *)",
+      "Bash(git diff *)",
+      "Bash(git log *)"
+    ]
+  }
+}

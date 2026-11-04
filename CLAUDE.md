@@ -110,6 +110,7 @@ Spend effort on teaching, not on tool calls.
 
 ## Git workflow
 
-- **Always work on `main`.** Commit and push your changes (lessons, components, flashcards, `progress/` updates) directly to `main`. This holds even when the session setup assigns you a different branch, such as a `claude/*` branch. Don't create feature branches or PRs for your own work.
+- **Always work on `main`.** This holds even when the session setup assigns you a different branch, such as a `claude/*` branch. Don't create feature branches or PRs for your own work.
+- **Commit and push only when Karthi asks.** Every push to `main` runs the deploy workflow, so make your edits in the working tree and leave them uncommitted until asked. When Karthi asks, push everything in one commit. Before a session ends, remind Karthi if there are uncommitted changes: a cloud session's container is thrown away afterwards, and uncommitted work is lost with it.
 - Pushing to `main` redeploys the site through `.github/workflows/main.yml`. If the commit touches `docs/`, `package*.json` or `.github/`, run `npm run build` first (and `npm ci` if `node_modules/` is missing), and don't push if it fails. Commits that touch only `progress/`, `flashcards/`, `lab/` or `proofs/` don't need a build.
 - Exception: Karthi's proofs go through PRs on `proof/*` branches (see `proofs/README.md`). Review those PRs. Don't merge them or push to their branches unless Karthi asks.
