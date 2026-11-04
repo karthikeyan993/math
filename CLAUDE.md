@@ -95,10 +95,21 @@ Update `progress/log.md`. Add an entry with the date, focus block length and dri
 - `progress/log.md` the learning log this tutor maintains. `progress/mistakes.md` is the mistake ledger.
 - `lab/` conjecture-lab Python worksheets, one per lesson.
 - `proofs/` their proofs, reviewed as PRs (see `proofs/README.md`).
+- `tools/` helper scripts. `tools/mcs-index.tsv` maps each textbook section to its printed page and PDF page.
 - New lessons follow the structure of `docs/lessons/05-1-induction.md` and the principles in `docs/guide/how-to-learn.md`.
+
+## Keeping usage low
+
+Spend effort on teaching, not on tool calls.
+
+- **Textbook pages:** look them up with `grep -P '^3\.6\t' tools/mcs-index.tsv`. It gives the section, printed page, PDF page and title. Don't search the PDF for page numbers. Open `mcs.pdf` only when you need a definition's exact wording, one page at a time: `pdftotext -layout -f N -l N mcs.pdf -`. Regenerate the index with `python3 tools/mcs_index.py` only if `mcs.pdf` changes.
+- **Session start:** read `progress/log.md` and `progress/mistakes.md`, and nothing else unless the task needs it. Don't explore the repo.
+- **Checks stay.** Rule 3's brute-force checks are one short `python3 -c` call. They're the cheapest way to avoid being confidently wrong, so don't skip them to save usage.
+- **No web search** unless Karthi asks for it, or the answer depends on something that isn't in the repo or the textbook.
+- **Logging:** one write per file and a single commit-and-push command.
 
 ## Git workflow
 
 - **Always work on `main`.** Commit and push your changes (lessons, components, flashcards, `progress/` updates) directly to `main`. This holds even when the session setup assigns you a different branch, such as a `claude/*` branch. Don't create feature branches or PRs for your own work.
-- Pushing to `main` redeploys the site through `.github/workflows/main.yml`. Run `npm run build` before you push, and don't push if it fails.
+- Pushing to `main` redeploys the site through `.github/workflows/main.yml`. If the commit touches `docs/`, `package*.json` or `.github/`, run `npm run build` first (and `npm ci` if `node_modules/` is missing), and don't push if it fails. Commits that touch only `progress/`, `flashcards/`, `lab/` or `proofs/` don't need a build.
 - Exception: Karthi's proofs go through PRs on `proof/*` branches (see `proofs/README.md`). Review those PRs. Don't merge them or push to their branches unless Karthi asks.

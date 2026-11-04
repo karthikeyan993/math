@@ -1,0 +1,173 @@
+section	printed_page	pdf_page	title
+0.1	4	12	References
+1	5	13	What is a Proof?
+1.1	5	13	Propositions
+1.2	8	16	Predicates
+1.3	8	16	The Axiomatic Method
+1.4	9	17	Our Axioms
+1.5	11	19	Proving an Implication
+1.6	13	21	Proving an “If and Only If”
+1.7	15	23	Proof by Cases
+1.8	16	24	Proof by Contradiction
+1.9	17	25	Good Proofs in Practice
+1.10	19	27	References
+2	29	37	The Well Ordering Principle
+2.1	29	37	Well Ordering Proofs
+2.2	30	38	Template for WOP Proofs
+2.3	32	40	Factoring into Primes
+2.4	33	41	Well Ordered Sets
+3	47	55	Logical Formulas
+3.1	48	56	Propositions from Propositions
+3.2	52	60	Propositional Logic in Computer Programs
+3.3	54	62	Equivalence and Validity
+3.4	57	65	The Algebra of Propositions
+3.5	62	70	The SAT Problem
+3.6	63	71	Predicate Formulas
+3.7	68	76	References
+4	103	111	Mathematical Data Types
+4.1	103	111	Sets
+4.2	108	116	Sequences
+4.3	109	117	Functions
+4.4	111	119	Binary Relations
+4.5	115	123	Finite Cardinality
+5	137	145	Induction
+5.1	137	145	Ordinary Induction
+5.2	146	154	Strong Induction
+5.3	153	161	Strong Induction vs. Induction vs. Well Ordering
+6	173	181	State Machines
+6.1	173	181	States and Transitions
+6.2	174	182	The Invariant Principle
+6.3	182	190	Partial Correctness & Termination
+6.4	187	195	The Stable Marriage Problem
+7	217	225	Recursive Data Types
+7.1	217	225	Recursive Definitions and Structural Induction
+7.2	221	229	Strings of Matched Brackets
+7.3	225	233	Recursive Functions on Nonnegative Integers
+7.4	227	235	Arithmetic Expressions
+7.5	232	240	Games as a Recursive Data Type
+7.6	238	246	Search Trees
+7.7	257	265	Induction in Computer Science
+8	295	303	Infinite Sets
+8.1	296	304	Infinite Cardinality
+8.2	305	313	The Halting Problem
+8.3	309	317	The Logic of Sets
+8.4	314	322	Does All This Really Work?
+9	341	349	Number Theory
+9.1	341	349	Divisibility
+9.2	346	354	The Greatest Common Divisor
+9.3	353	361	Prime Mysteries
+9.4	356	364	The Fundamental Theorem of Arithmetic
+9.5	358	366	Alan Turing
+9.6	362	370	Modular Arithmetic
+9.7	364	372	Remainder Arithmetic
+9.8	367	375	Turing’s Code (Version 2.0)
+9.9	369	377	Multiplicative Inverses and Cancelling
+9.10	373	381	Euler’s Theorem
+9.11	378	386	RSA Public Key Encryption
+9.12	381	389	What has SAT got to do with it?
+9.13	382	390	References
+10	421	429	Directed graphs & Partial Orders
+10.1	423	431	Vertex Degrees
+10.2	424	432	Walks and Paths
+10.3	427	435	Adjacency Matrices
+10.4	430	438	Walk Relations
+10.5	431	439	Directed Acyclic Graphs & Scheduling
+10.6	439	447	Partial Orders
+10.7	442	450	Representing Partial Orders by Set Containment
+10.8	444	452	Linear Orders
+10.9	444	452	Product Orders
+10.10	445	453	Equivalence Relations
+10.11	447	455	Summary of Relational Properties
+10.12	449	457	References
+11	481	489	Communication Networks
+11.1	481	489	Routing
+11.2	482	490	Routing Measures
+11.3	485	493	Network Designs
+12	501	509	Simple Graphs
+12.1	501	509	Vertex Adjacency and Degrees
+12.2	503	511	Sexual Demographics in America
+12.3	505	513	Some Common Graphs
+12.4	507	515	Isomorphism
+12.5	509	517	Bipartite Graphs & Matchings
+12.6	514	522	Coloring
+12.7	519	527	Walks in Simple Graphs
+12.8	521	529	Connectivity
+12.9	523	531	Special Walks and Tours
+12.10	525	533	k-connected Graphs
+12.11	527	535	Forests & Trees
+12.12	535	543	References
+13	575	583	Planar Graphs
+13.1	575	583	Drawing Graphs in the Plane
+13.2	575	583	Definitions of Planar Graphs
+13.3	586	594	Euler’s Formula
+13.4	587	595	Bounding the Number of Edges in a Planar Graph
+13.5	588	596	Returning to K5 and K3;3
+13.6	589	597	Coloring Planar Graphs
+13.7	591	599	Classifying Polyhedra
+13.8	594	602	Another Characterization for Planar Graphs
+14	605	613	Sums and Asymptotics
+14.1	606	614	The Value of an Annuity
+14.2	612	620	Sums of Powers
+14.3	614	622	Approximating Sums
+14.4	618	626	Hanging Out Over the Edge
+14.5	624	632	Products
+14.6	627	635	Double Trouble
+14.7	630	638	Asymptotic Notation
+15	655	663	Cardinality Rules
+15.1	655	663	Counting One Thing by Counting Another
+15.2	656	664	Counting Sequences
+15.3	659	667	The Generalized Product Rule
+15.4	663	671	The Division Rule
+15.5	665	673	Counting Subsets
+15.6	667	675	Sequences with Repetitions
+15.7	671	679	Counting Practice: Poker Hands
+15.8	676	684	The Pigeonhole Principle
+15.9	685	693	Inclusion-Exclusion
+15.10	690	698	Combinatorial Proofs
+15.11	694	702	References
+16	735	743	Generating Functions
+16.1	735	743	Infinite Series
+16.2	737	745	Counting with Generating Functions
+16.3	743	751	Partial Fractions
+16.4	746	754	Solving Linear Recurrences
+16.5	751	759	Formal Power Series
+16.6	754	762	References
+17	773	781	Events and Probability Spaces
+17.1	773	781	Let’s Make a Deal
+17.2	774	782	The Four Step Method
+17.3	783	791	Strange Dice
+17.4	790	798	The Birthday Principle
+17.5	792	800	Set Theory and Probability
+17.6	796	804	References
+18	805	813	Conditional Probability
+18.1	805	813	Monty Hall Confusion
+18.2	806	814	Definition and Notation
+18.3	808	816	The Four-Step Method for Conditional Probability
+18.4	810	818	Why Tree Diagrams Work
+18.5	818	826	The Law of Total Probability
+18.6	820	828	Simpson’s Paradox
+18.7	822	830	Independence
+18.8	824	832	Mutual Independence
+18.9	828	836	Probability versus Confidence
+19	857	865	Random Variables
+19.1	857	865	Random Variable Examples
+19.2	859	867	Independence
+19.3	861	869	Distribution Functions
+19.4	869	877	Great Expectations
+19.5	881	889	Linearity of Expectation
+19.6	890	898	Really Great Expectations
+20	915	923	Deviation from the Mean
+20.1	915	923	Markov’s Theorem
+20.2	918	926	Chebyshev’s Theorem
+20.3	922	930	Properties of Variance
+20.4	928	936	Estimation by Random Sampling
+20.5	933	941	Sums of Random Variables
+21	965	973	Random Walks
+21.1	965	973	Gambler’s Ruin
+21.2	975	983	Random Walks on Graphs
+22	995	1003	Recurrences
+22.1	995	1003	The Towers of Hanoi
+22.2	998	1006	Merge Sort
+22.3	1002	1010	Linear Recurrences
+22.4	1009	1017	Divide-and-Conquer Recurrences
+22.5	1016	1024	A Feel for Recurrences
