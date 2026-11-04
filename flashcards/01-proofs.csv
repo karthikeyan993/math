@@ -1,0 +1,15 @@
+#separator:comma
+#html:true
+#tags column:3
+"What is a proposition?","A statement that is either true or false (MCS §1.1, p. 5). In types: a <code>bool</code>.","mcs::ch01"
+"What is a predicate? How is P(n) different from an ordinary function p(n)?","A proposition whose truth depends on variables (MCS §1.2, p. 8). P(n) is true/false (a function to <code>bool</code>); p(n) is a number.","mcs::ch01,cs"
+"Is Goldbach's Conjecture a proposition, even though nobody knows if it's true?","Yes. A proposition <i>has</i> a truth value; nobody has to know which one.","mcs::ch01"
+"n² + n + 41 is prime for n = 0..39. What happens at n = 40, and what's the lesson?","p(40) = 41·41. Checking a finite sample can't prove a claim about an infinite set. Tests are evidence, not proof.","mcs::ch01,cs"
+"When is an inference rule sound?","When every truth assignment that makes all the antecedents true also makes the consequent true (MCS §1.4.1, p. 10).","mcs::ch01"
+"From Q and P IMPLIES Q, conclude P. Sound? Name it.","Not sound: P = F, Q = T breaks it. It's 'affirming the consequent' (e.g. 'tests pass, so the code is correct').","mcs::ch01,cs"
+"Method #1 for proving 'if P then Q'","Write 'Assume P', then show Q logically follows (MCS §1.5.1, p. 11).","mcs::ch01"
+"Contrapositive of 'P IMPLIES Q', and is it equivalent?","NOT(Q) IMPLIES NOT(P). Yes, equivalent: proving it proves the original (MCS §1.5.2, p. 13).","mcs::ch01"
+"Two ways to prove P IFF Q","(1) Prove P ⇒ Q and Q ⇒ P separately. (2) A chain of iffs where every link holds in both directions (MCS §1.6, pp. 13–15).","mcs::ch01"
+"What else must a proof by cases show, besides each case?","That the cases cover every possibility (MCS §1.7, p. 15). Like Rust's exhaustive <code>match</code>.","mcs::ch01,cs"
+"Why does 'any 6 people contain 3 mutual acquaintances or 3 mutual strangers' fail for 5 people?","The pentagon: each person met exactly their 2 neighbours. No 3 all met, and no 3 all strangers.","mcs::ch01"
+"Why is checking all 2^15 meeting patterns of 6 people a real proof?","Finitely many cases, and every one is checked. A check over every case is a complete proof; ℕ has no last case, so it can't be done there.","mcs::ch01,cs"

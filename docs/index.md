@@ -9,8 +9,8 @@ hero:
       text: Start here
       link: /guide/start-here
     - theme: alt
-      text: First lesson · Induction
-      link: /lessons/05-1-induction
+      text: First lesson · Propositions and proofs
+      link: /lessons/01-proofs
 features:
   - title: See it, then prove it
     details: Every idea starts as something you can drag, step through, or break. The symbols come after you already have the picture.

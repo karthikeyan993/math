@@ -96,7 +96,15 @@ Update `progress/log.md`. Add an entry with the date, focus block length and dri
 - `lab/` conjecture-lab Python worksheets, one per lesson.
 - `proofs/` their proofs, reviewed as PRs (see `proofs/README.md`).
 - `tools/` helper scripts. `tools/mcs-index.tsv` maps each textbook section to its printed page and PDF page.
-- New lessons follow the structure of `docs/lessons/05-1-induction.md` and the principles in `docs/guide/how-to-learn.md`.
+- `tools/verify/<lesson>.py` brute-forces every numeric or finite claim in that lesson. `tools/verify/components.py` cross-checks the components' TypeScript maths (`docs/components/*.ts`) against independent Python.
+- `tools/check_content.py` checks citations against the page index, quotes and problem numbers against `mcs.pdf`, components, links, flashcards, and runs every verify and lab script. `tools/test_check_content.py` plants mistakes to prove the checker catches them. `tools/smoke_test.cjs` drives every visual in a real browser (after `npm run build`).
+- New lessons follow the structure of `docs/lessons/01-proofs.md` and the principles in `docs/guide/how-to-learn.md`.
+
+## Building lessons
+
+- **Not a summary of the book.** Each lesson is built around interactive visuals the book doesn't have, examples beyond the book's, and CS connections that really hold. Every visual asks Karthi to do something (predict, drag, pick) before it reveals anything.
+- **Nothing unverified.** Every numeric or finite claim gets a check in `tools/verify/<lesson>.py`. Components compute their own answers (e.g. `TruthTable` evaluates its formulas), so no answer key is typed by hand. Verbatim quotes use a blockquote ending in `<cite>MCS §X.Y, p. N</cite>`, which the checker matches against the PDF. Cite as `MCS §X.Y, p. N`, `(pp. A–B)` or `Problem X.Y (p. N)`. If a fact can't be checked here (history, a tool's behaviour), only state it if you're sure, and say less rather than guess.
+- **Each lesson needs:** an entry in the sidebar (`docs/.vitepress/config.mts`) and in `docs/guide/course-map.md`, `flashcards/<lesson>.csv`, and `tools/verify/<lesson>.py`. The checker fails if any is missing.
 
 ## Keeping usage low
 
@@ -112,5 +120,5 @@ Spend effort on teaching, not on tool calls.
 
 - **Always work on `main`.** This holds even when the session setup assigns you a different branch, such as a `claude/*` branch. Don't create feature branches or PRs for your own work.
 - **Commit and push only when Karthi asks.** Every push to `main` runs the deploy workflow, so make your edits in the working tree and leave them uncommitted until asked. When Karthi asks, push everything in one commit. Before a session ends, remind Karthi if there are uncommitted changes: a cloud session's container is thrown away afterwards, and uncommitted work is lost with it.
-- Pushing to `main` redeploys the site through `.github/workflows/main.yml`. If the commit touches `docs/`, `package*.json` or `.github/`, run `npm run build` first (and `npm ci` if `node_modules/` is missing), and don't push if it fails. Commits that touch only `progress/`, `flashcards/`, `lab/` or `proofs/` don't need a build.
+- Pushing to `main` redeploys the site through `.github/workflows/main.yml`. If the commit touches `docs/`, `package*.json` or `.github/`, run `python3 tools/check_content.py`, `npm run build` and `node tools/smoke_test.cjs` first (and `npm ci` if `node_modules/` is missing), and don't push if any fails. Commits that touch `flashcards/`, `lab/` or `tools/` need `python3 tools/check_content.py` only. Commits that touch only `progress/` or `proofs/` need nothing. `.github/workflows/check.yml` reruns all of this on every push (until it is installed, its copy is in `tools/ci/`).
 - Exception: Karthi's proofs go through PRs on `proof/*` branches (see `proofs/README.md`). Review those PRs. Don't merge them or push to their branches unless Karthi asks.

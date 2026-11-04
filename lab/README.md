@@ -5,7 +5,8 @@ Mathematicians don't start from theorems. They compute examples, notice a patter
 Each file is a short guided worksheet. The `TODO` lines are for you. Run it with:
 
 ```sh
-python3 lab/05-induction.py
+python3 lab/01-logic.py        # Lecture 1: primes that lie, truth tables, quantifiers, the party puzzle
+python3 lab/05-induction.py    # Lecture 2: sums and the courtyard
 ```
 
 The rule: **a passing test is evidence, not proof.** The script can check 10,000 cases, and you still owe the induction proof for all n.

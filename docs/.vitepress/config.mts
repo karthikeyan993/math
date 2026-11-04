@@ -25,6 +25,9 @@ export default defineConfig({
       {
         text: 'Unit 1 · Proofs',
         items: [
+          { text: 'L1 · 1.1–1.7 Propositions and proofs', link: '/lessons/01-proofs' },
+          { text: 'L1 · 3.1–3.3 Propositional logic', link: '/lessons/03-1-propositional-logic' },
+          { text: 'L1 · 3.6 Quantifiers', link: '/lessons/03-6-quantifiers' },
           { text: 'L2 · 5.1 Ordinary induction', link: '/lessons/05-1-induction' },
         ],
       },

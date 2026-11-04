@@ -9,7 +9,7 @@ This follows the **Spring 2024** run of 6.1200J (Erik Demaine, Zachary Abel, Bry
 ## Unit 1 · Proofs
 | # | Lecture | Reading (MCS) | Lessons |
 |---|---|---|---|
-| 1 | Predicates, Sets, and Proofs | 1.0–1.7, 3.1–3.3, 3.6 | |
+| 1 | Predicates, Sets, and Proofs | 1.0–1.7, 3.1–3.3, 3.6 | ✅ [1.1–1.7 Propositions and proofs](/lessons/01-proofs) · ✅ [3.1–3.3 Propositional logic](/lessons/03-1-propositional-logic) · ✅ [3.6 Quantifiers](/lessons/03-6-quantifiers) |
 | 2 | Contradiction and Induction | 1.8–1.9, 4.1, 5.1 | ✅ [5.1 Ordinary induction](/lessons/05-1-induction) |
 | 3 | Casework and Strong Induction | 5.2–5.3 | |
 | 4 | State Machines | Updated State Machines chapter (on OCW, not in `mcs.pdf`) | |

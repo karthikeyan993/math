@@ -58,7 +58,8 @@
 .viz-btn:hover { border-color: var(--viz-blue); }
 .viz-btn.primary { background: var(--viz-blue); color: var(--viz-panel); border-color: var(--viz-blue); font-weight: 600; }
 .viz-btn:disabled { opacity: 0.45; cursor: default; }
-.viz svg { display: block; width: 100%; height: auto; }
+/* Diagrams stretch to the panel; MathJax's inline SVGs (inside slots) must keep their own size. */
+.viz svg:not(mjx-container svg) { display: block; width: 100%; height: auto; }
 .viz-readout { font-size: 0.9rem; color: var(--viz-ink); margin-top: 8px; min-height: 1.5em; }
 .viz-readout b { color: var(--viz-gold); }
 

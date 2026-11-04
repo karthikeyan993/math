@@ -9,6 +9,14 @@ import OddSquares from '../../components/OddSquares.vue'
 import TrominoTiling from '../../components/TrominoTiling.vue'
 import FocusTimer from '../../components/FocusTimer.vue'
 import Checkpoint from '../../components/Checkpoint.vue'
+import TruthTable from '../../components/TruthTable.vue'
+import QuantifierGame from '../../components/QuantifierGame.vue'
+import QuantifierGrid from '../../components/QuantifierGrid.vue'
+import PrimeStreak from '../../components/PrimeStreak.vue'
+import FactorSigns from '../../components/FactorSigns.vue'
+import PartyGraph from '../../components/PartyGraph.vue'
+import WasonCards from '../../components/WasonCards.vue'
+import EquivalenceChecker from '../../components/EquivalenceChecker.vue'
 
 export default {
   extends: DefaultTheme,
@@ -21,5 +29,13 @@ export default {
     app.component('TrominoTiling', TrominoTiling)
     app.component('FocusTimer', FocusTimer)
     app.component('Checkpoint', Checkpoint)
+    app.component('TruthTable', TruthTable)
+    app.component('QuantifierGame', QuantifierGame)
+    app.component('QuantifierGrid', QuantifierGrid)
+    app.component('PrimeStreak', PrimeStreak)
+    app.component('FactorSigns', FactorSigns)
+    app.component('PartyGraph', PartyGraph)
+    app.component('WasonCards', WasonCards)
+    app.component('EquivalenceChecker', EquivalenceChecker)
   },
 } satisfies Theme

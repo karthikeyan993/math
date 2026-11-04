@@ -1,0 +1,37 @@
+name: Check content
+
+# Runs on every push and pull request (including proofs, flashcards and lab
+# changes that don't trigger a deploy). See tools/check_content.py.
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pdftotext
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+      - name: Citations, quotes, components, links, flashcards, maths
+        run: python3 tools/check_content.py
+      - name: The checker catches planted mistakes
+        run: python3 tools/test_check_content.py
+      - run: npm ci
+      - run: npm run build
+      - name: Browser smoke test
+        run: |
+          npm install --no-save playwright@1.63.0
+          npx playwright install --with-deps chromium
+          node tools/smoke_test.cjs

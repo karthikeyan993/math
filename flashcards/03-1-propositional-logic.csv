@@ -1,0 +1,15 @@
+#separator:comma
+#html:true
+#tags column:3
+"When is P IMPLIES Q false? Write it in code.","Only when P is true and Q is false. In code: <code>!p || q</code>.","mcs::ch03,cs"
+"'An implication is true exactly when …'","… the if-part is false or the then-part is true (MCS §3.1.3, p. 50).","mcs::ch03"
+"Why is an implication with a false hypothesis counted as true?","A promise that wasn't triggered isn't broken. E.g. a 12-rule spec where only 2 sensors fired must still come out true. Same idea as <code>all([]) == True</code>.","mcs::ch03,cs"
+"Is OR inclusive or exclusive in maths? Which operator is 'exactly one'?","Inclusive: P OR Q is true when both are. 'Exactly one' is XOR (<code>p != q</code> on bools).","mcs::ch03,cs"
+"Simplify: <code>x > 0 || (x <= 0 && y > 100)</code>","<code>x > 0 || y > 100</code>. A OR (NOT A AND B) ≡ A OR B (MCS §3.2, pp. 52–53).","mcs::ch03,cs"
+"Contrapositive vs converse of P IMPLIES Q. Which is equivalent?","Contrapositive NOT(Q) ⇒ NOT(P): equivalent. Converse Q ⇒ P: not equivalent (differs when exactly one of P, Q is true).","mcs::ch03"
+"Wason cards A, K, 4, 7. Rule: vowel ⇒ even on the back. Which must you turn?","A and 7. Only a vowel with an odd number can break it. K: if-part false. 4: then-part already true.","mcs::ch03"
+"What's the 'inverse' NOT(P) ⇒ NOT(Q) equivalent to?","The converse Q ⇒ P, not the original. A common wrong 'contrapositive': you must negate AND swap.","mcs::ch03"
+"Valid vs satisfiable, in truth-table terms","Valid: every row is T. Satisfiable: at least one row is T (MCS §3.3.2, p. 56).","mcs::ch03"
+"P is satisfiable iff NOT(P) is not ____","valid (MCS §3.3.2, p. 56).","mcs::ch03"
+"F and G are equivalent iff ____ is valid","F IFF G (MCS §3.3.2, p. 56).","mcs::ch03"
+"A AND B ≡ B AND A. So are <code>p != NULL && p->len > 0</code> and its swap the same in C?","No. && short-circuits left to right; the swapped version dereferences NULL. Equivalence is about truth values, not evaluation order.","mcs::ch03,cs"

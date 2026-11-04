@@ -1,0 +1,15 @@
+#separator:comma
+#html:true
+#tags column:3
+"∀ and ∃ on a finite domain, in Python","∀x∈D. P(x) is <code>all(P(x) for x in D)</code>; ∃x∈D. P(x) is <code>any(P(x) for x in D)</code>.","mcs::ch03,cs"
+"The quantifier game: who picks at ∀, who picks at ∃, and when is the statement true?","Opponent picks at ∀, you pick at ∃, left to right, seeing earlier picks. True iff you can always win.","mcs::ch03"
+"∀x ∃y. x + y = 4 vs ∃y ∀x. x + y = 4 over D = {0..4}","First true (y = 4 − x can depend on x). Second false (one y must work for every x).","mcs::ch03"
+"On a grid of P(x, y) (rows x, columns y), what do ∀x ∃y and ∃y ∀x mean?","∀x ∃y: every row has a dot. ∃y ∀x: some column is full.","mcs::ch03"
+"Which is valid: ∃y∀x ⇒ ∀x∃y, or ∀x∃y ⇒ ∃y∀x?","∃y∀x ⇒ ∀x∃y (a full column gives every row a dot). The reverse fails: the diagonal x = y is a counter-model (MCS §3.6.6, pp. 67–68).","mcs::ch03"
+"Hashing: '∀ key sets S ∃ h with no collisions' vs '∃ h ∀ S no collisions' (more keys than slots)","First true; second false by pigeonhole. That's hash flooding: with h fixed, an attacker picks colliding keys. Hence randomised hash seeds.","mcs::ch03,cs"
+"Negate ∀x. P(x) and ∃x. P(x)","NOT ∀x. P(x) ≡ ∃x. NOT P(x); NOT ∃x. P(x) ≡ ∀x. NOT P(x) (MCS §3.6.5, p. 66). In Python: <code>not all(...) == any(not ...)</code>.","mcs::ch03,cs"
+"Negate ∀x ∃y. y > x","∃x ∀y. y ≤ x. Move the NOT right, flipping each quantifier it passes.","mcs::ch03"
+"How do you write 'for all' in SQL?","As NOT EXISTS … NOT EXISTS: 'no course the student hasn't taken' = 'took every course'.","mcs::ch03,cs"
+"What's wrong with: negation of 'every request is fast' is 'every request is slow'?","The quantifier must flip: the negation is 'some request is slow'. One counterexample is enough.","mcs::ch03,cs"
+"How do you show a quantified formula is NOT valid?","Give a counter-model: a domain and an interpretation that make it false (MCS §3.6.6, p. 68).","mcs::ch03"
+"Why avoid the word 'any' in specs and proofs?","It can mean ∀ or ∃: 'if you can solve any problem, you get an A' (MCS §3.6.1, p. 64). Say 'every' or 'some'.","mcs::ch03"
