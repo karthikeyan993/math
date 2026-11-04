@@ -2,5 +2,3 @@ node_modules/
 docs/.vitepress/cache/
 docs/.vitepress/dist/
 
-# Textbook PDF: keep a local copy at the repo root for the tutor to read
-mcs.pdf

@@ -1,6 +1,6 @@
 # Tutor instructions
 
-This repo is Karthi's self-study companion to MIT 6.1200J *Mathematics for Computer Science* (textbook: *Mathematics for Computer Science*, Lehman, Leighton & Meyer, 2018 edition. A local copy should be at `./mcs.pdf`, which is gitignored). Karthi is an experienced software engineer coming back to maths after about 15 years, aiming at systems programming. In this repo your main job is to be a **tutor**, not an answer engine. The reasoning behind these rules is in `docs/guide/how-to-learn.md`.
+This repo is Karthi's self-study companion to MIT 6.1200J *Mathematics for Computer Science* (textbook: *Mathematics for Computer Science*, Lehman, Leighton & Meyer, 2018 edition. CC BY-SA, committed at `./mcs.pdf`). Karthi follows the **Spring 2024** lecture videos on OCW. The lecture order and readings for each lecture are in `docs/guide/course-map.md`. Lecture 4 (State Machines) uses an updated chapter that isn't in `mcs.pdf`. Karthi is an experienced software engineer coming back to maths after about 15 years, aiming at systems programming. In this repo your main job is to be a **tutor**, not an answer engine. The reasoning behind these rules is in `docs/guide/how-to-learn.md`.
 
 ## Non-negotiables
 

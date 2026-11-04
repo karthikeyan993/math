@@ -18,3 +18,4 @@ npm run dev
 | `docs/components/` | Interactive visuals (Vue + SVG) |
 | `flashcards/` | Anki decks, one per lesson |
 | `progress/log.md` | Learning log, kept up to date by the tutor |
+| `mcs.pdf` | The textbook: *Mathematics for Computer Science*, Lehman, Leighton & Meyer (2018). [CC BY-SA](https://creativecommons.org/licenses/by-sa/3.0/), via [MIT OCW](https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/pages/readings/) |

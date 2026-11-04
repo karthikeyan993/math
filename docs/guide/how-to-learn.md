@@ -106,7 +106,7 @@ You're learning with an AI model, so its strengths and weaknesses are part of th
 - **Instant, step-level feedback** on your proofs. This includes **photos of handwritten work**, since it can read images.
 - **A visual on demand.** Say *show me* about anything that confuses you, and it builds an interactive picture for that exact question, the same way these lesson visuals were built.
 - **Checking by code.** It can brute-force finite cases, simulate probabilities, and test a conjecture over thousands of inputs in seconds.
-- **Reading the textbook with you.** With `mcs.pdf` in the repo root, it assigns exact sections and cites pages.
+- **Reading the textbook with you.** The textbook is in the repo (`mcs.pdf`), so it assigns exact sections and cites pages.
 - **Patience and availability.** Ask the same thing five ways at 11 pm. That's fine.
 
 **Where it's weak, and the guardrails for each**

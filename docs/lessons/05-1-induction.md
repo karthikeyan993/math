@@ -9,7 +9,7 @@ outline: deep
 
 <div class="lesson-meta">
 
-**Textbook:** MCS §5.1 (pp. 137–146) · **Time:** 4 short sittings of 10–20 min, with checkpoints between them · **You'll need:** what a predicate $P(n)$ is (a statement that is true or false for each number $n$)
+**Lecture:** [2 · Contradiction and Induction](https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/resources/61200-sp24-lecture02-2024feb09_mp4/) · **Textbook:** MCS §5.1 (pp. 137–146) · **Time:** 4 short sittings of 10–20 min, with checkpoints between them · **You'll need:** what a predicate $P(n)$ is (a statement that is true or false for each number $n$)
 
 </div>
 

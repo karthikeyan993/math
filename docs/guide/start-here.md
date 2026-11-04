@@ -8,7 +8,7 @@ A companion to [MIT 6.1200J, Spring 2024](https://ocw.mit.edu/courses/6-1200j-ma
 
 0. **Set a focus block.** Use the *Focus block* button at the bottom right of every lesson: one goal, one time box. Start with a length you can actually finish.
 1. **Warm up (5 min).** Ask the tutor to *quiz me*. It pulls a few questions from earlier lessons.
-2. **Watch or read (20 min).** The lecture, or the book section the lesson names.
+2. **Watch, then read.** The [2024 lecture video](https://ocw.mit.edu/courses/6-1200j-mathematics-for-computer-science-spring-2024/video_galleries/lecture-videos/), then that lecture's reading in `mcs.pdf` (see the [course map](./course-map)). Pause the video at each new definition and predict what comes next.
 3. **Do the lesson (30 min).** Answer the Predict boxes *before* revealing them, and play with every visual.
 4. **Practise (30+ min).** Do the textbook problems by hand. Stuck? Ask the tutor for *a hint*, not the answer.
 5. **Close (5 min).** Ask the tutor to *log this session*. Import the lesson's flashcards into Anki.
@@ -37,10 +37,6 @@ Open this repo in [Claude Code](https://claude.com/claude-code). It reads `CLAUD
 | *log this session* | Updates `progress/log.md`: what you covered, what was shaky, when to review |
 
 Why it works this way is on [How these lessons teach](./how-to-learn#using-ai-without-letting-it-do-the-learning).
-
-## Put the textbook where the tutor can read it
-
-Copy `mcs.pdf` into the repo root. It's gitignored, so it stays local.
 
 ## Run the site locally
 

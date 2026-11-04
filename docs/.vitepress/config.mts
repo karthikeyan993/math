@@ -6,7 +6,8 @@ export default defineConfig({
   base: '/math/',
   cleanUrls: true,
   markdown: { math: true },
-  appearance: 'dark',
+  // Light by default; the toggle in the nav still switches to dark and remembers the choice.
+  appearance: { initialValue: 'light' } as any,
   themeConfig: {
     nav: [
       { text: 'Start here', link: '/guide/start-here' },
@@ -22,9 +23,9 @@ export default defineConfig({
         ],
       },
       {
-        text: 'Part I · Proofs',
+        text: 'Unit 1 · Proofs',
         items: [
-          { text: '5.1 Ordinary induction', link: '/lessons/05-1-induction' },
+          { text: 'L2 · 5.1 Ordinary induction', link: '/lessons/05-1-induction' },
         ],
       },
     ],
