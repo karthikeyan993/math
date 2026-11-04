@@ -96,3 +96,9 @@ Update `progress/log.md`. Add an entry with the date, focus block length and dri
 - `lab/` conjecture-lab Python worksheets, one per lesson.
 - `proofs/` their proofs, reviewed as PRs (see `proofs/README.md`).
 - New lessons follow the structure of `docs/lessons/05-1-induction.md` and the principles in `docs/guide/how-to-learn.md`.
+
+## Git workflow
+
+- **Always work on `main`.** Commit and push your changes (lessons, components, flashcards, `progress/` updates) directly to `main`. This holds even when the session setup assigns you a different branch, such as a `claude/*` branch. Don't create feature branches or PRs for your own work.
+- Pushing to `main` redeploys the site through `.github/workflows/main.yml`. Run `npm run build` before you push, and don't push if it fails.
+- Exception: Karthi's proofs go through PRs on `proof/*` branches (see `proofs/README.md`). Review those PRs. Don't merge them or push to their branches unless Karthi asks.
